@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GuideView: View {
+    @Environment(\.presentationMode) var presentationMode
     
     
     var body: some View {
@@ -29,7 +30,9 @@ struct GuideView: View {
                     GuideComponent(title: "Book", subtitle: "Tap the Button", description: "This is the perfect place for you!", icon: "checkmark.square")
                 }
                 Spacer(minLength: 10)
-                Button(action: {}, label: {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }, label: {
                     Text("Continue".uppercased())
                         .font(.headline)
                         .padding()

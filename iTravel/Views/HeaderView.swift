@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct HeaderView: View {
+    @Binding var showGuideView: Bool
+    
+    
     var body: some View {
         HStack {
             Button {
-                
+                self.showGuideView.toggle()
             } label: {
                 Image(systemName: "info.circle")
                     .font(.system(size: 24, weight: .regular))
@@ -24,17 +27,26 @@ struct HeaderView: View {
                 .foregroundColor(Color.pink)
             Spacer()
             Button {
-            
+                self.showGuideView.toggle()
             } label: {
                 Image(systemName: "questionmark.circle")
                     .font(.system(size: 24, weight: .regular))
             }
             .accentColor(Color.primary)
+            .sheet(isPresented: $showGuideView, content: {
+                GuideView()
+            })
         }
         .padding()
     }
 }
 
 #Preview(traits: .fixedLayout(width: 375, height: 80)) {
-    HeaderView()
+    struct PreviewWrapper: View {
+            @State var value: Bool = true
+            var body: some View {
+                HeaderView(showGuideView: $value)
+            }
+        }
+        return PreviewWrapper()
 }
