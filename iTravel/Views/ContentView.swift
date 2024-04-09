@@ -10,11 +10,12 @@ import SwiftUI
 struct ContentView: View {
     @State var alert: Bool = false
     @State var guideFlag: Bool = false
+    @State var infoFlag: Bool = false
 
     
     var body: some View {
         VStack {
-            HeaderView(showGuideView: $guideFlag)
+            HeaderView(showGuideView: $guideFlag, showInfoView: $infoFlag)
             Spacer()
             CardView(travel: travelData[3])
                 .padding()

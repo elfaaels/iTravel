@@ -9,12 +9,13 @@ import SwiftUI
 
 struct HeaderView: View {
     @Binding var showGuideView: Bool
+    @Binding var showInfoView: Bool
     
     
     var body: some View {
         HStack {
             Button {
-                self.showGuideView.toggle()
+                self.showInfoView.toggle()
             } label: {
                 Image(systemName: "info.circle")
                     .font(.system(size: 24, weight: .regular))
@@ -36,6 +37,9 @@ struct HeaderView: View {
             .sheet(isPresented: $showGuideView, content: {
                 GuideView()
             })
+            .sheet(isPresented: $showInfoView, content: {
+             InfoView()
+            })
         }
         .padding()
     }
@@ -44,8 +48,9 @@ struct HeaderView: View {
 #Preview(traits: .fixedLayout(width: 375, height: 80)) {
     struct PreviewWrapper: View {
             @State var value: Bool = true
+        @State var flag: Bool = true
             var body: some View {
-                HeaderView(showGuideView: $value)
+                HeaderView(showGuideView: $value, showInfoView: $flag)
             }
         }
         return PreviewWrapper()
