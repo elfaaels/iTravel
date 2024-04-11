@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBDD64812BC7782600B2C655 /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD64802BC7782600B2C655 /* SymbolModifier.swift */; };
+		BBDD64862BC77F3500B2C655 /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD64852BC77F3500B2C655 /* CardTransition.swift */; };
+		BBDD64892BC7815A00B2C655 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD64882BC7815A00B2C655 /* PlaySound.swift */; };
+		BBDD648C2BC783A400B2C655 /* sound-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BBDD648A2BC783A400B2C655 /* sound-click.mp3 */; };
+		BBDD648D2BC783A400B2C655 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BBDD648B2BC783A400B2C655 /* sound-rise.mp3 */; };
 		BBF412F92BC4D79900926084 /* iTravelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF412F82BC4D79900926084 /* iTravelApp.swift */; };
 		BBF412FB2BC4D79900926084 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF412FA2BC4D79900926084 /* ContentView.swift */; };
 		BBF412FD2BC4D79A00926084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBF412FC2BC4D79A00926084 /* Assets.xcassets */; };
 		BBF413002BC4D79A00926084 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBF412FF2BC4D79A00926084 /* Preview Assets.xcassets */; };
-		BBF413092BC4D91D00926084 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = BBF413082BC4D91D00926084 /* Sounds */; };
 		BBF4130C2BC4D92B00926084 /* HoneymoonData.txt in Resources */ = {isa = PBXBuildFile; fileRef = BBF4130A2BC4D92B00926084 /* HoneymoonData.txt */; };
 		BBF4130D2BC4D92B00926084 /* Credits.txt in Resources */ = {isa = PBXBuildFile; fileRef = BBF4130B2BC4D92B00926084 /* Credits.txt */; };
 		BBF4130F2BC4D9C400926084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF4130E2BC4D9C400926084 /* LaunchScreen.storyboard */; };
@@ -29,12 +33,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BBDD64802BC7782600B2C655 /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = "<group>"; };
+		BBDD64852BC77F3500B2C655 /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
+		BBDD64882BC7815A00B2C655 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		BBDD648A2BC783A400B2C655 /* sound-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-click.mp3"; sourceTree = "<group>"; };
+		BBDD648B2BC783A400B2C655 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		BBF412F52BC4D79900926084 /* iTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF412F82BC4D79900926084 /* iTravelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTravelApp.swift; sourceTree = "<group>"; };
 		BBF412FA2BC4D79900926084 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BBF412FC2BC4D79A00926084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBF412FF2BC4D79A00926084 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BBF413082BC4D91D00926084 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		BBF4130A2BC4D92B00926084 /* HoneymoonData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoneymoonData.txt; sourceTree = "<group>"; };
 		BBF4130B2BC4D92B00926084 /* Credits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Credits.txt; sourceTree = "<group>"; };
 		BBF4130E2BC4D9C400926084 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +71,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BBDD64822BC77F0B00B2C655 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BBDD64852BC77F3500B2C655 /* CardTransition.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BBDD64872BC7814100B2C655 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BBDD64882BC7815A00B2C655 /* PlaySound.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		BBF412EC2BC4D79900926084 = {
 			isa = PBXGroup;
 			children = (
@@ -83,9 +107,11 @@
 			isa = PBXGroup;
 			children = (
 				BBF413102BC4D9D200926084 /* Info.plist */,
+				BBF413072BC4D88900926084 /* Views */,
+				BBDD64872BC7814100B2C655 /* Helper */,
+				BBDD64822BC77F0B00B2C655 /* Extension */,
 				BBF413252BC4F0A500926084 /* Utils */,
 				BBF4131C2BC4E55600926084 /* Component */,
-				BBF413072BC4D88900926084 /* Views */,
 				BBF413112BC4DF6C00926084 /* Model */,
 				BBF413062BC4D88100926084 /* Data */,
 				BBF412F82BC4D79900926084 /* iTravelApp.swift */,
@@ -107,9 +133,10 @@
 		BBF413062BC4D88100926084 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				BBDD648A2BC783A400B2C655 /* sound-click.mp3 */,
+				BBDD648B2BC783A400B2C655 /* sound-rise.mp3 */,
 				BBF4130B2BC4D92B00926084 /* Credits.txt */,
 				BBF4130A2BC4D92B00926084 /* HoneymoonData.txt */,
-				BBF413082BC4D91D00926084 /* Sounds */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -150,6 +177,7 @@
 			children = (
 				BBF413262BC4F0B600926084 /* TitleModifier.swift */,
 				BBF413282BC4F1E000926084 /* ButtonModifier.swift */,
+				BBDD64802BC7782600B2C655 /* SymbolModifier.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -213,8 +241,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBF4130D2BC4D92B00926084 /* Credits.txt in Resources */,
-				BBF413092BC4D91D00926084 /* Sounds in Resources */,
+				BBDD648C2BC783A400B2C655 /* sound-click.mp3 in Resources */,
 				BBF4130C2BC4D92B00926084 /* HoneymoonData.txt in Resources */,
+				BBDD648D2BC783A400B2C655 /* sound-rise.mp3 in Resources */,
 				BBF4130F2BC4D9C400926084 /* LaunchScreen.storyboard in Resources */,
 				BBF413002BC4D79A00926084 /* Preview Assets.xcassets in Resources */,
 				BBF412FD2BC4D79A00926084 /* Assets.xcassets in Resources */,
@@ -232,9 +261,12 @@
 				BBF413242BC4EFF300926084 /* InfoView.swift in Sources */,
 				BBF4131B2BC4E3C700926084 /* FooterView.swift in Sources */,
 				BBF413272BC4F0B600926084 /* TitleModifier.swift in Sources */,
+				BBDD64862BC77F3500B2C655 /* CardTransition.swift in Sources */,
+				BBDD64812BC7782600B2C655 /* SymbolModifier.swift in Sources */,
 				BBF413192BC4E26200926084 /* HeaderView.swift in Sources */,
 				BBF412FB2BC4D79900926084 /* ContentView.swift in Sources */,
 				BBF413292BC4F1E000926084 /* ButtonModifier.swift in Sources */,
+				BBDD64892BC7815A00B2C655 /* PlaySound.swift in Sources */,
 				BBF4131E2BC4E56600926084 /* HeaderComponent.swift in Sources */,
 				BBF412F92BC4D79900926084 /* iTravelApp.swift in Sources */,
 				BBF413152BC4DFBA00926084 /* TravelData.swift in Sources */,

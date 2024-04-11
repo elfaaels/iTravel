@@ -16,10 +16,11 @@ struct FooterView: View {
                 .font(.system(size: 42, weight: .light))
             Spacer()
             Button(action: {
+                playSound(sound: "sound-click", type: "mp3")
                 self.showBookingAlert.toggle()
             }, label: {
                 Text("Book Destination".uppercased())
-                    .font(.system(.subheadline, design: .rounded))
+                    .font(.system(.subheadline, design: .monospaced))
                     .fontWeight(.heavy)
                     .padding(.horizontal, 20)
                     .padding(.vertical, 12)
